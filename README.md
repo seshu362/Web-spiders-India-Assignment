@@ -12,7 +12,7 @@ This is a Task Management API built using **Node.js**, **Express.js**, and **SQL
   - [PUT /tasks/:id](#put-tasksid-update-an-existing-task)
   - [DELETE /tasks/:id](#delete-tasksid-delete-a-specific-task)
 - [Error Handling](#error-handling)
-- [License](#license)
+  
 
 ## Installation
 
