@@ -1,0 +1,42 @@
+### 1. Create Task API
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "New Task",
+  "description": "This is a description for the new task",
+  "status": "TODO",
+  "priority": "MEDIUM",
+  "dueDate": "2024-12-15T12:00:00"
+}
+
+###
+
+### 2. Get All Tasks API
+GET http://localhost:3000/tasks?status=TODO&priority=MEDIUM&sort=createdAt&order=asc&limit=10&skip=0
+
+###
+
+### 3. Get Specific Task by ID API
+GET http://localhost:3000/tasks/1
+
+###
+
+### 4. Update Task API
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Task",
+  "description": "This is an updated description",
+  "status": "IN_PROGRESS",
+  "priority": "HIGH",
+  "dueDate": "2024-12-20T12:00:00"
+}
+
+###
+
+### 5. Delete Task API
+DELETE http://localhost:3000/tasks/1
+
+###
